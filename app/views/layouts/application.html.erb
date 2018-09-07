@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>TheSidelineProgrammer</title>
+    <title>Sideline Programmer</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -9,6 +9,22 @@
   </head>
 
   <body>
-    <%= yield %>
+    <div class="bg-light">
+      <%= render 'layouts/header' %>
+    </div>
+    <div class="mb-5">
+      <%= render 'layouts/navbar' %>
+    </div>
+    <div class="row">
+      <div class="col-2">
+        <%= render 'layouts/info_sidebar' %>
+      </div>
+      <div class="col-7">
+        <%= yield %>
+      </div>
+      <div class="col-2">
+        <%= render 'layouts/content_sidebar' %>
+      </div>
+    </div>
   </body>
 </html>

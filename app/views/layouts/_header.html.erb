@@ -1,0 +1,31 @@
+<div class="float-right small">
+  <% if user_signed_in? %>
+  <div class="mr-2">
+    Hello user
+  </div>
+  <div>
+    <%= link_to "Bye-bye!", destroy_user_session_path, method: :delete, :data => {:confirm => 'Are you sure?'}, class:"unlink-text small align-top border" %>
+  </div>
+  <% else %>
+  <div class="mr-2 mt-1">
+    <%= link_to "Log in!", new_user_session_path,  class:"unlink-text small align-top border" %>
+  </div>
+  <% end %>
+</div>
+<nav class="navbar navbar-expand-lg">
+  <div class="row col-12">
+    <div class="col-3 text-center">
+      <div class="mx-auto d-none d-md-block">
+        <%= image_tag "", class: "header-gif border mx-auto" %>
+      </div>
+    </div>
+    <div class="col-6 mx-auto">
+      <span class=""><%= image_tag('The_Sideline_Programmer_Logo.png', class: "w-100") %></span>
+    </div>
+    <div class="col-3 text-center">
+      <div class="mx-auto d-none d-md-block">
+        <%= image_tag "", class: "header-gif border mx-auto" %>
+      </div>
+    </div>
+  </div>
+</nav>

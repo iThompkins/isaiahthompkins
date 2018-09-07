@@ -1,0 +1,13 @@
+<div class="container jumbotron">
+  <div class="row">
+    <div class="col-3">
+      <%= image_tag post.photo.url(:thumb) %>
+    </div>
+    <div class="col-9">
+      <h3 class=""><%= link_to post.title, post_path(post), class: "unlink-text" %></h3>
+      <div>
+        <%= post.body.truncate(100, " ") %>
+      </div>
+    </div>
+  </div>
+</div>
