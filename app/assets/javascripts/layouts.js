@@ -1,5 +1,6 @@
 $(document).on('turbolinks:load', function(){
-  let giphyParser = (data) => {
+  $('[data-toggle="tooltip"]').tooltip(); 
+  /*let giphyParser = (data) => {
     return data["data"]["images"]["fixed_height_small"]["url"]
   }
 
@@ -10,5 +11,5 @@ $(document).on('turbolinks:load', function(){
     success: function(data){
       $(".header-gif").attr("src", giphyParser(data));
     }
-  })
+  })*/
 })
