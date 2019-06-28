@@ -15,22 +15,21 @@
     </script>
   </head>
 
-  <body>
-    <div class="bg-light">
-      <%= render 'layouts/header' %>
+  <body class="" stlye="color:#3A2F28">
+    <div class="d-block d-md-none" style="background-color: #E0DFCC">
+      <%= render 'layouts/header'%>
     </div>
-    <div class="mb-5">
-      <%= render 'layouts/navbar' %>
-    </div>
-    <div class="row">
-      <div class="col-2">
-        <%= render 'layouts/info_sidebar' %>
+    <div class="row col-12" style="height:100vh;">
+      <div class="col-3 border-right d-none d-md-block" style="display:flex;align-items:center;background-color: #E0DFCC">
+        <div class="">
+          <%= render 'layouts/info_sidebar' %>
+        </div>
       </div>
-      <div class="col-7">
+      <div class="col-9 d-none d-sm-block">
         <%= yield %>
       </div>
-      <div class="col-2">
-        <%= render 'layouts/content_sidebar' %>
+      <div class="col-11 d-block d-sm-none">
+        <%= yield %>
       </div>
     </div>
   </body>

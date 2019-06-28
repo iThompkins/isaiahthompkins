@@ -19,6 +19,7 @@ class PostsController < ApplicationController
 
   # GET /posts/1/edit
   def edit
+    @body = Post.find(params[:id]).body
   end
 
   # POST /posts
