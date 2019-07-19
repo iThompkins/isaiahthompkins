@@ -1,13 +1,25 @@
 <div>
+  <h3 class="border-bottom mt-3 pb-1">Bio</h3>
+</div>
+<div class="col-12">
+  <p class="mx-auto">
+    A software developer with a focus in full-stack web development. I have 7 years experience using the "Big 3"
+    web development technologies (HTML5, CSS3, JS). I also have 3 years experience using Ruby on Rails and ReactJS/React
+    Native. I am formally educated in Economics (Brown University), where I worked with Stata and Python doing data
+    analysis and regression interpretation. If you'd like to work with me, please reference the links in the sidebar
+    or contact me via email at <a href="mailto:isaiah_thompkins.alumni.brown.edu">isaiah_thompkins.alumni.brown.edu</a>.
+  </p>
+</div>
+<div>
   <h3 class="border-bottom mt-3 pb-1">Web Development Projects</h3>
 </div>
-<div class="">
+<div class="col-12">
   <div class="row my-5">
     <div class="col-6">
       <%= image_tag('spitballLandingPage.png', class: "w-100 br-5 border-none shadow") %>
     </div>
     <div class="col-6">
-      <i><%= link_to 'Spitball.io', 'https://spitball.io', target: '_blank' %></i>
+      <i><%= link_to 'Spitball.io', 'https://spitball.io', target: '_blank' %> (<%= link_to 'Repo', 'https://github.com/1Don/Spitball', target: '_blank' %>)</i>
        is a <b>Ruby on Rails</b> web application I developed in the Spring of 2018.
        It is a platform designed to connect budding entreprenuers with one another
        to form ventures over the internet! It features:
@@ -20,16 +32,36 @@
   </div>
   <div class="row mb-5">
     <div class="col-6">
-      screenshot of the mobile vr store
+      <%= image_tag('TMVRStore.png', class: "w-100 br-5 border-none shadow") %>
     </div>
     <div class="col-6">
-      <i><a href="">The Mobile VR Store</a></i> is a <b>React</b> and <b>RoR</b> web application I completed in the Spring of 2019.
-      It features two virtual reality headsets for mobile devices and is fully integrated with the
+      <i>The Mobile VR Store (<%= link_to 'In Dev.', 'https://github.com/iThompkins/eStore', target: '_blank' %>)</i>
+      is a <b>React</b> and <b>RoR</b> web application I began in the Spring of 2019.
+      It features two virtual reality headsets for mobile devices available for purchase and is fully integrated with the
       Stripe API. It includes:
       <ul class="mt-2">
         <li>Secure Stripe-powered Checkout</li>
         <li>An Original eCommerce Store Design</li>
         <li>A Fully Responsive Layout</li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div>
+  <h3 class="border-bottom mt-3 pb-1">Mobile Projects</h3>
+</div>
+<div class="col-12">
+  <div class="row my-5">
+    <div class="col-6">
+      <%= image_tag('TheScoopApp.png', class: "w-100 br-5 border-none shadow") %>
+    </div>
+    <div class="col-6">
+      <i>The Scoop App (<%= link_to 'In Dev.', 'https://github.com/iThompkins/ScoopApp', target: '_blank' %>)</i>
+       is a <b>React Native</b> mobile application I developed in the Summer of 2019.
+       It is a platform designed to connect local artists and creatives! It features:
+      <ul class="mt-2">
+        <li>A Native Authentication System Integrated With OAuth</li>
+        <li>User-Curated Feeds</li>
       </ul>
     </div>
   </div>
