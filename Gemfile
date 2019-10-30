@@ -7,7 +7,7 @@ end
 
 
 gem 'paperclip', '~> 6.1'
-gem 'devise', '~> 4.5'
+gem 'devise', '~> 4.7'
 gem 'font-awesome-rails'
 gem 'bootstrap'
 gem 'jquery-rails'
